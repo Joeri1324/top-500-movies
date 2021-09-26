@@ -45,11 +45,7 @@ const MovieListEntry = ({
           <b>
             <Row>
               <a href={`https://www.themoviedb.org/movie/${movie.id}`}>
-                { movie.title }
-                -
-                { movie.vote_average }
-                -
-                { getYear(movie.release_date) }
+                {`${movie.title} (${movie.vote_average}) ${getYear(movie.release_date)}`}
               </a>
               <Icon
                 char="☆"
