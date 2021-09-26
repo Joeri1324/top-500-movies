@@ -27,9 +27,8 @@ export const useMovies = () => {
       : MAXIMUM_PAGES - page - 1
 
     fetch(buildApiURL('movie/top_rated', `page=${pageParam}`))
-      .then(response => response.json())
-      .then(json => {
-        console.log(json.results)
+      .then((response) => response.json())
+      .then((json) => {
         setMovieCache(movies => ({ ...movies, [page]: json.results }))
       })
   }, [page, order])
