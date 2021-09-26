@@ -12,11 +12,13 @@ const Header = (): React.ReactElement => (
       width={170}
       height={160}
     />
-
-    <Row>
-      <OrderButton />
-      <Pagination />
-    </Row>
+    
+    <div className={classes.container}>
+      <Row>
+        <OrderButton />
+        <Pagination />
+      </Row>
+    </div>
   </div>
 )
 

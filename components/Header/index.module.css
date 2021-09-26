@@ -11,3 +11,7 @@
   align-items: center;
   font-size: 12px;
 }
+
+.container {
+  padding: 16px;
+}
